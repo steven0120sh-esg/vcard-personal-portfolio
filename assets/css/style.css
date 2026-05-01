@@ -425,7 +425,10 @@ main {
 .contact-info :is(.contact-link, time, address) {
   color: var(--white-2);
   font-size: var(--fs-7);
-  word-break: break-all;
+  /* word-break: break-all; */
+  white-space: normal;
+  display: block;      /* add this */
+  width: 100%;         /* add this */
 }
 
 .contact-info address { font-style: normal; }
